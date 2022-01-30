@@ -81,7 +81,7 @@
 }
 
 .menu__list {
-  width: 533px;
+  width: 390px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,6 +108,7 @@
   color: #2e2401;
   font-size: 18px;
   text-decoration: none;
+  font-family: Montserrat;
 }
 
 .menu__text {
@@ -117,7 +118,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 320px;
+  width: 230px;
   font-size: 14px;
   color: #5f4e15;
   text-align: center;
@@ -141,6 +142,32 @@
 
 .button__end {
   display: none;
+}
+
+.enter__button {
+  display: none;
+}
+
+.nav__toggle {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  color: #7c5c0a;
+}
+
+.nav__toggle span:before {
+  content: "";
+  background: #7c5c0a;
+  display: block;
+  height: 4px;
+  margin-bottom: 6px;
 }
 
 .intruduction {
@@ -180,7 +207,6 @@ h1 {
   font-size: 90px;
   font-style: normal;
   font-weight: 900;
-  line-height: 88px;
   text-align: left;
   color: white;
   margin-bottom: 19px;
@@ -232,6 +258,7 @@ h1 {
   font-weight: 300;
   text-align: left;
   margin-bottom: 30px;
+  color: #443100;
 }
 
 .subtitle__secondtext {
@@ -251,6 +278,16 @@ h1 {
   top: 130px;
   border-radius: 0px;
   left: 450px;
+}
+
+.subsub__image {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  height: 160px;
+  width: 160px;
+  top: -20px;
+  left: 220px;
 }
 
 @media (max-width: 992px) {
@@ -301,9 +338,142 @@ h1 {
     margin-bottom: 10px;
   }
   h1 {
-    font-size: 70px;
+    font-size: 65px;
   }
   .subtitle h2 {
     font-size: 23px;
+  }
+  .sub__image {
+    left: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .subtitle > h2 {
+    margin-bottom: 40px;
+  }
+  .menu__list .menu__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .first__text-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .sub__image {
+    height: 223px;
+    width: 300px;
+    left: 217px;
+    top: 183px;
+  }
+  .subtitle > button {
+    height: 55px;
+    width: 270px;
+    border-radius: 11px;
+  }
+  .subtitle__secondtext {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #5f4e15;
+  }
+}
+
+@media (max-width: 480px) {
+  .enter__button {
+    display: block;
+  }
+  .header > button {
+    display: none;
+  }
+  .menu__list {
+    display: none;
+  }
+  .nav__toggle {
+    display: block;
+  }
+  .intruduction__text-show {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+  h1 {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 43px;
+  }
+  .sub__image {
+    display: none;
+  }
+  .subsub__image {
+    display: block;
+  }
+  .first__text-item {
+    display: none;
+  }
+  .subtitle img:nth-child(2),
+  .subtitle img:nth-child(4) {
+    display: none;
+  }
+  .subtitle > h2 {
+    display: block;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .subtitle > h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    width: 200px;
+  }
+  .intruduction {
+    min-height: unset;
+    padding: 16px 20px;
+  }
+  .subtitle {
+    margin-bottom: 0;
+  }
+  .subtitle__firsttext {
+    display: none;
+  }
+  .subtitle__secondtext {
+    display: none;
+  }
+  .subtitle > button {
+    margin-bottom: 0;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+  }
+  .subtitle > button {
+    margin-left: 10px;
+  }
+  .subsub__image {
+    left: 140px;
   }
 }
