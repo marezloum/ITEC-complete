@@ -275,19 +275,328 @@ h1 {
   z-index: 2;
   height: 298px;
   width: 480px;
-  top: 130px;
+  top: 150px;
   border-radius: 0px;
-  left: 450px;
+  right: 0;
 }
 
 .subsub__image {
   display: none;
   position: absolute;
   z-index: 2;
+  top: 0;
   height: 160px;
   width: 160px;
-  top: -20px;
-  left: 220px;
+  right: 0;
+}
+
+.container.evaluate {
+  padding: 180px;
+}
+
+.evaluate__title {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  width: 69%;
+  color: #2e2401;
+}
+
+.evaluate__title-text {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #492f10;
+}
+
+.evaluate__button {
+  height: 52px;
+  width: 250px;
+  left: 636px;
+  top: 958px;
+  border-radius: 11px;
+  background: linear-gradient(157.95deg, #fff500 2.32%, #ffd600 73.49%);
+  display: block;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 97px;
+}
+
+.h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.h2 .top__border {
+  width: 65px;
+  height: 4px;
+  background: black;
+  display: block;
+}
+
+.row__items-about h2 {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+  text-align: left;
+}
+
+.about__first-text {
+  width: 60%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  text-align: justify;
+}
+
+.about__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__second-text {
+  width: 40%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-align: justify;
+}
+
+.about__second-image {
+  padding-left: 80px;
+}
+
+.container.courses {
+  background: linear-gradient(275.08deg, #000a60 -17.51%, #0a75d9 97.22%);
+  padding-top: 40px;
+}
+
+.courses__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.courses__text {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.courses__text-title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 49px;
+  text-align: left;
+  color: #fffdf3;
+  margin-bottom: 10px;
+}
+
+.courses__text-title > span {
+  width: 65px;
+  height: 4px;
+  background: white;
+  display: block;
+}
+
+.courses__text-subtitle {
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: left;
+  color: #fffdf3;
+}
+
+.course__adaptive-menu {
+  display: none;
+}
+
+.footer__container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#082a85), to(#082165));
+  background: linear-gradient(180deg, #082a85 0%, #082165 100%);
+  color: #dee4ee;
+  padding: 19px 56px;
+  padding: 20px 40px;
+}
+
+.data {
+  color: #dee4ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer__menu {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__menu ul {
+  list-style: none;
+  margin-right: 28px;
+  width: 50%;
+}
+
+.footer__menu ul li a {
+  color: #dee4ee;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.data__block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.data__block-1 > input {
+  text-align: center;
+  height: 35px;
+  width: 255px;
+  border-radius: 5px;
+  color: #d0d0d0;
+  margin-bottom: 12px;
+}
+
+.data__block-1 > h3 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.data__block-1 > a {
+  width: 255px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5194f6), to(#0757cd));
+  background: linear-gradient(180deg, #5194f6 0%, #0757cd 100%);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 18px;
+  text-align: center;
+  color: #dee4ee;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.footer__logo2 {
+  display: none;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 85px;
+}
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.contacts__adress {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.contacts__adress > p {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.contacts__adress > a {
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.contacts__tell {
+  text-align: right;
+}
+
+.contacts__tell > p:first-child {
+  margin-bottom: 8px;
 }
 
 @media (max-width: 992px) {
@@ -344,7 +653,78 @@ h1 {
     font-size: 23px;
   }
   .sub__image {
-    left: 250px;
+    right: 0;
+    top: 155px;
+    width: 350px;
+    height: 220px;
+  }
+  .container.evaluate {
+    padding: 40px;
+  }
+  .courses__text-title > span {
+    display: none;
+  }
+  .courses__text {
+    padding: 0 40px 20px 40px;
+  }
+  .data {
+    max-width: 780px;
+  }
+  .data__block-1 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .data__block-1 > h3 {
+    font-weight: 300;
+  }
+  .data__block-1 > input {
+    font-size: 17px;
+  }
+  .data__block-1 .footer__logo img {
+    width: 127px;
+  }
+  .footer__menu {
+    width: 50%;
+    padding: 40px 0 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__menu ul li {
+    margin-bottom: 10px;
+  }
+  .footer__menu ul li a {
+    font-size: 17px;
+  }
+  .footer__social {
+    padding: 0;
+  }
+  .footer__social .footer__social-icons {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer__social .footer__social-icons a:nth-child(2) {
+    margin: 0 10px;
+  }
+  .footer__social .footer__social-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__social .contacts__adress {
+    text-align: left;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sub__image {
+    right: 0;
+    top: 180px;
+    width: 250px;
+    height: 200px;
   }
 }
 
@@ -377,16 +757,11 @@ h1 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .sub__image {
-    height: 223px;
-    width: 300px;
-    left: 217px;
-    top: 183px;
-  }
   .subtitle > button {
     height: 55px;
     width: 270px;
     border-radius: 11px;
+    margin-bottom: 70px;
   }
   .subtitle__secondtext {
     font-size: 13px;
@@ -395,6 +770,153 @@ h1 {
     line-height: 16px;
     text-align: left;
     color: #5f4e15;
+  }
+  .container.evaluate {
+    padding: 35px;
+  }
+  .sub__image {
+    height: 165px;
+    width: 262px;
+    right: 0;
+    top: 268px;
+  }
+  .evaluate__title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+  }
+  .evaluate__title-text {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 0 34px 0 34px;
+  }
+  .enter__button {
+    height: 48px;
+    width: 249px;
+    left: 260px;
+    top: 784px;
+    border-radius: 11px;
+    text-align: center;
+  }
+  .h2 element.style {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 49px;
+    text-align: left;
+    width: 440px;
+  }
+  .h2 element.style {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 440px;
+  }
+  .h2 .top__border {
+    display: none;
+  }
+  .about__first-text {
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+  }
+  .about__second-image {
+    padding-left: 50px;
+  }
+  .courses__text-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 37px;
+    text-align: left;
+  }
+  .course__adaptive-menu {
+    display: none;
+  }
+  .courses__text {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .courses__items {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .courses__items-block {
+    margin-bottom: 20px;
+  }
+  .courses__items-block img {
+    margin: 0 auto;
+    display: block;
+  }
+  .course__adaptive-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .course__adaptive-menu :nth-child(2) {
+    margin-bottom: 5px;
+  }
+  .course__adaptive-menu > p {
+    font-family: Montserrat;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .course__adaptive-menu > button {
+    height: 59px;
+    width: 255px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5599ff), to(#0f32ae));
+    background: linear-gradient(180deg, #5599ff 0%, #0f32ae 100%);
+    color: white;
+    margin: 0 auto;
+  }
+  .footer__container {
+    padding: 19px 10px;
+  }
+  .footer__container .data {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .data__block-1 a {
+    width: 90%;
+    font-size: 13px;
+  }
+  .data__block-1 input {
+    width: 90%;
+  }
+  .footer__social-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer__menu ul li a {
+    font-size: 13px;
   }
 }
 
@@ -464,6 +986,54 @@ h1 {
     margin-bottom: 0;
     margin-left: 80px;
   }
+  .evaluate__title {
+    display: none;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  .evaluate__button {
+    margin-bottom: 10px;
+  }
+  .about__first-text {
+    display: none;
+  }
+  .about__second-image {
+    display: none;
+  }
+  .about__second-text {
+    width: 100%;
+  }
+  .data__block-1 {
+    width: 100%;
+  }
+  .data__block-1 > h3 {
+    font-size: 25px;
+    line-height: unset;
+  }
+  .data__block-1 input {
+    width: 60%;
+  }
+  .data__block-1 a {
+    width: 60%;
+  }
+  .footer__menu {
+    width: 100%;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__logo2 {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .footer__logo2 img {
+    width: 127px;
+  }
+  .contacts__tell {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -475,5 +1045,23 @@ h1 {
   }
   .subsub__image {
     left: 140px;
+  }
+  .evaluate__title-text {
+    padding: 0;
+  }
+  .h2 {
+    font-size: 14px;
+  }
+  .data__block-1 input {
+    width: 100%;
+  }
+  .data__block-1 input:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .data__block-1 input:nth-child(3) {
+    display: none;
+  }
+  .data__block-1 a {
+    width: 100%;
   }
 }
