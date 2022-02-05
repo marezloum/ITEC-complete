@@ -92,13 +92,19 @@ header {
   justify-content: space-between;
   list-style: none;
   position: relative;
-  > li {
-    padding: 16px 0;
+  .menu__list-item-logo {
+    display: none;
   }
-  li:first-child {
+  > .menu__list-item {
+    padding: 16px 0;
+    &:last-child {
+      display: none;
+    }
+  }
+  > li:nth-child(2) {
     position: relative;
   }
-  li:first-child:hover {
+  li:nth-child(2):hover {
     .menu__link-show {
       display: block;
       list-style: none;
@@ -154,6 +160,7 @@ header {
 }
 .nav__toggle {
   display: none;
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -932,15 +939,67 @@ h1 {
     }
   }
   .menu__list {
-    display: none;
+    visibility: hidden;
+    display: block;
+    color: white;
+    background: linear-gradient(180deg, #062169 0%, #123287 100%);
+    position: absolute;
+    right: -216px;
+    z-index: 3;
+    top: 44px;
+    height: 100vh;
+    padding: 10px 15px;
+    width: 216px;
+    transition: right 1s ease, visibility 1s ease;
     &.show {
-      color: white;
-      background: linear-gradient(180deg, #062169 0%, #123287 100%);
-      position: absolute;
-      display: block;
+      visibility: visible;
       right: 0;
-      top: 44px;
-      height: 100%;
+    }
+    .menu__list-item {
+      p {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    .menu__list-item-logo {
+      display: block;
+      img {
+        width: 107px;
+      }
+    }
+    > li:last-child {
+      display: block;
+      margin-top: 65px;
+    }
+    li:nth-child(2):hover .menu__link-show {
+      position: unset;
+      background: none;
+      padding-left: 18px;
+      padding-top: 8px;
+      li {
+        width: unset;
+        padding: 9px 0;
+        &:hover {
+          background: none;
+        }
+        a {
+          font-size: 16px;
+          line-height: 21px;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+      a {
+        color: white;
+      }
+    }
+    .menu__link {
+      color: white;
     }
   }
 
